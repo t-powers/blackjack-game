@@ -8,7 +8,7 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 
 function startGame() {
-  sumEl.innerHTML = "Sum: " + sum;
+  sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
   } else if (sum === 21) {
@@ -18,5 +18,5 @@ function startGame() {
     message = "You're out of the game!";
     isAlive = false;
   }
-  messageEl.innerHTML = message;
+  messageEl.textContent = message;
 }
