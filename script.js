@@ -22,3 +22,9 @@ function startGame() {
   }
   messageEl.textContent = message;
 }
+
+function newCard() {
+  let newCard = 2;
+  sum += newCard;
+  startGame();
+}
